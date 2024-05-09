@@ -14,11 +14,11 @@ function App() {
       .catch((error) => setIsError(error.message));
   }, []);
 
-
+//if an error show otherwise don't show
   return (
     <>
       
-      //if an error show otherwise don't show
+      
       {isError !== "" && <h2>{isError}</h2>}
 
       {myData.slice(0, 100).map((post) => {
